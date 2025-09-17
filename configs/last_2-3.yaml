@@ -1,0 +1,29 @@
+DATASETS:
+  TRAIN: ("VOC_trainval_2-3", )
+  TEST: ("VOC_test", )
+DATALOADER:
+  NUM_WORKERS: 4
+MODEL:
+  DEVICE: 'cuda'
+  META_ARCHITECTURE: 'ILODRCNN'
+  WEIGHTS:  # Relative path from train script to last weights
+  ROI_HEADS:
+    NAME: 'ILODRoiHead'
+    NUM_CLASSES: 3
+  PROPOSAL_GENERATOR:
+    NAME: 'ILODRPN'
+SOLVER:
+  IMS_PER_BATCH: 2
+  BASE_LR: 0.001
+  MAX_ITER: 3000
+  STEPS: (2000, 2500)
+  WARMUP_ITERS: 500
+ILOD:
+  DISTILLATION: True
+  LOAD_TEACHER: False
+  HUBER: False
+  TEACHER_CORR: True
+  FEATURE_LAM: 0.8
+  RPN_LAM: 0.8
+  ROI_LAM: 0.5  
+VERSION: 2

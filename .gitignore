@@ -1,0 +1,44 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Detectron2
+detectron2/
+
+# Data directories
+data/
+.data/
+
+# Model outputs and results
+output/
+models/
+results/
+debug/
+documents/
+analysis/
+*.pth
+*.pkl
+
+# Logs and temporary files
+*.log
+logs/
+temp/
+tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
