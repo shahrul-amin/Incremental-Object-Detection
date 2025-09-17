@@ -1,6 +1,6 @@
-# Continual Object Detection with ILOD
+# Incremental Object Detection with ILOD
 
-A comprehensive framework for continual object detection built on top of [Detectron2](https://github.com/facebookresearch/detectron2). This implementation provides an improved version of Faster-ILOD (Incremental Learning for Object Detection) with advanced knowledge distillation, attention mechanisms, and extensive analysis capabilities.
+A comprehensive framework for Incremental object detection built on top of [Detectron2](https://github.com/facebookresearch/detectron2). This implementation provides an improved version of Faster-ILOD (Incremental Learning for Object Detection) with advanced knowledge distillation, attention mechanisms, and extensive analysis capabilities.
 
 ## Overview
 
@@ -159,7 +159,7 @@ AUGMENTATION_FACTOR: 5  # Generate 5 augmented versions per image
 ## Logging
 
 ### Performance Monitoring
-- **Continual Learning Metrics**: Backward transfer, forward transfer, forgetting measures
+- **Incremental Learning Metrics**: Backward transfer, forward transfer, forgetting measures
 - **Component-wise Analysis**: Separate evaluation of RPN and ROI head performance
 - **Class-specific Metrics**: Per-class AP tracking across learning tasks
 
@@ -176,7 +176,7 @@ AUGMENTATION_FACTOR: 5  # Generate 5 augmented versions per image
 3. **Domain-Incremental**: Adapting to new visual domains
 
 ### Benchmark Datasets
-- **PASCAL VOC**: Standard splits for continual learning evaluation
+- **PASCAL VOC**: Standard splits for Incremental learning evaluation
 - **MS COCO**: Large-scale object detection with class incremental setups
 - **SODA10M**: Autonomous driving dataset for domain adaptation
 
@@ -217,7 +217,7 @@ output/
 │   ├── roi_analysis/
 │   └── evaluation_results/
 └── analysis/
-    ├── continual_learning_metrics.json
+    ├── Incremental_learning_metrics.json
     ├── class_performance_tracking.csv
     └── visualization_plots/
 ```
@@ -242,7 +242,7 @@ output/
 ## Research Applications
 
 This framework supports research in:
-- Continual learning for computer vision
+- Incremental learning for computer vision
 - Knowledge distillation in object detection
 - Catastrophic forgetting mitigation
 - Multi-task learning in vision systems
@@ -253,5 +253,5 @@ This framework supports research in:
 This implementation extends and improves upon:
 - Faster-ILOD: [Pattern Recognition Letters, 2020]
 - Knowledge Distillation for Object Detection
-- Continual Learning methodologies
+- Incremental Learning methodologies
 - Detectron2 framework architecture
